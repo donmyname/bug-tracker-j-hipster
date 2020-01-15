@@ -1,0 +1,7 @@
+entity Category{
+   name String required,
+   description String
+  }
+   dto * with mapstruct
+   service all with serviceImpl
+   
