@@ -1,0 +1,380 @@
+
+E:\jhipsterp\BugTrackerJHipster>jhipster import-jdl entity-code-gen.jh
+INFO! Using JHipster version installed locally in current project's node_modules
+INFO! Executing import-jdl entity-code-gen.jh
+INFO! Options: from-cli: true, inline:
+INFO! Found .yo-rc.json on path. This is an existing app
+INFO! The JDL is being parsed.
+warn: In the One-to-Many relationship from Employee to Job, only bidirectionality is supported for a One-to-Many association. The other side will be automatically added.
+warn: In the One-to-Many relationship from Department to Employee, only bidirectionality is supported for a One-to-Many association. The other side will be automatically added.
+info: The DTO option has been detected to be set for Region, the 'serviceClass' value for the 'service' is gonna be set for this entity if no other value has been set.
+info: The DTO option has been detected to be set for Country, the 'serviceClass' value for the 'service' is gonna be set for this entity if no other value has been set.
+info: The DTO option has been detected to be set for Location, the 'serviceClass' value for the 'service' is gonna be set for this entity if no other value has been set.
+info: The DTO option has been detected to be set for Department, the 'serviceClass' value for the 'service' is gonna be set for this entity if no other value has been set.
+info: The DTO option has been detected to be set for Task, the 'serviceClass' value for the 'service' is gonna be set for this entity if no other value has been set.
+info: The DTO option has been detected to be set for Employee, the 'serviceClass' value for the 'service' is gonna be set for this entity if no other value has been set.
+info: The DTO option has been detected to be set for Job, the 'serviceClass' value for the 'service' is gonna be set for this entity if no other value has been set.
+info: The DTO option has been detected to be set for JobHistory, the 'serviceClass' value for the 'service' is gonna be set for this entity if no other value has been set.
+INFO! Found entities: Region, Country, Location, Department, Task, Employee, Job, JobHistory.
+INFO! The JDL has been successfully parsed
+INFO! Generating 8 entities.
+
+Found the .jhipster/Region.json configuration file, entity can be automatically generated!
+
+
+The entity Region is being updated.
+
+
+Found the .jhipster/Country.json configuration file, entity can be automatically generated!
+
+
+The entity Country is being updated.
+
+
+Found the .jhipster/Location.json configuration file, entity can be automatically generated!
+
+
+The entity Location is being updated.
+
+
+Found the .jhipster/Department.json configuration file, entity can be automatically generated!
+
+
+The entity Department is being updated.
+
+
+Found the .jhipster/Task.json configuration file, entity can be automatically generated!
+
+
+The entity Task is being updated.
+
+
+Found the .jhipster/Employee.json configuration file, entity can be automatically generated!
+
+
+The entity Employee is being updated.
+
+
+Found the .jhipster/Job.json configuration file, entity can be automatically generated!
+
+
+The entity Job is being updated.
+
+
+Found the .jhipster/JobHistory.json configuration file, entity can be automatically generated!
+
+
+The entity JobHistory is being updated.
+
+   create src\main\resources\config\liquibase\changelog\20200118151156_added_entity_Region.xml
+   create src\main\resources\config\liquibase\fake-data\region.csv
+   create src\main\java\com\mycompany\myapp\domain\Region.java
+   create src\main\java\com\mycompany\myapp\repository\RegionRepository.java
+   create src\main\java\com\mycompany\myapp\web\rest\RegionResource.java
+   create src\main\java\com\mycompany\myapp\service\RegionService.java
+   create src\main\java\com\mycompany\myapp\service\dto\RegionDTO.java
+   create src\main\java\com\mycompany\myapp\service\mapper\EntityMapper.java
+   create src\main\java\com\mycompany\myapp\service\mapper\RegionMapper.java
+   create src\test\java\com\mycompany\myapp\web\rest\RegionResourceIT.java
+   create src\test\gatling\user-files\simulations\RegionGatlingTest.scala
+   create src\test\java\com\mycompany\myapp\domain\RegionTest.java
+   create src\test\java\com\mycompany\myapp\service\dto\RegionDTOTest.java
+   create src\test\java\com\mycompany\myapp\service\mapper\RegionMapperTest.java
+ conflict src\main\resources\config\liquibase\master.xml
+? Overwrite src\main\resources\config\liquibase\master.xml? overwrite
+    force src\main\resources\config\liquibase\master.xml
+ conflict src\main\java\com\mycompany\myapp\config\CacheConfiguration.java
+? Overwrite src\main\java\com\mycompany\myapp\config\CacheConfiguration.java? overwrite
+    force src\main\java\com\mycompany\myapp\config\CacheConfiguration.java
+   create src\main\webapp\app\entities\region\region.component.html
+   create src\main\webapp\app\entities\region\region-detail.component.html
+   create src\main\webapp\app\entities\region\region-update.component.html
+   create src\main\webapp\app\entities\region\region-delete-dialog.component.html
+ conflict src\main\webapp\app\layouts\navbar\navbar.component.html
+? Overwrite src\main\webapp\app\layouts\navbar\navbar.component.html? overwrite
+    force src\main\webapp\app\layouts\navbar\navbar.component.html
+   create src\main\resources\config\liquibase\changelog\20200118151157_added_entity_Country.xml
+   create src\main\resources\config\liquibase\changelog\20200118151157_added_entity_constraints_Country.xml
+   create src\main\resources\config\liquibase\fake-data\country.csv
+   create src\main\java\com\mycompany\myapp\domain\Country.java
+   create src\main\java\com\mycompany\myapp\repository\CountryRepository.java
+   create src\main\java\com\mycompany\myapp\web\rest\CountryResource.java
+   create src\main\java\com\mycompany\myapp\service\CountryService.java
+   create src\main\java\com\mycompany\myapp\service\dto\CountryDTO.java
+   create src\main\java\com\mycompany\myapp\service\mapper\CountryMapper.java
+   create src\test\java\com\mycompany\myapp\web\rest\CountryResourceIT.java
+   create src\test\gatling\user-files\simulations\CountryGatlingTest.scala
+   create src\test\java\com\mycompany\myapp\domain\CountryTest.java
+   create src\test\java\com\mycompany\myapp\service\dto\CountryDTOTest.java
+   create src\test\java\com\mycompany\myapp\service\mapper\CountryMapperTest.java
+   create src\main\webapp\app\entities\country\country.component.html
+   create src\main\webapp\app\entities\country\country-detail.component.html
+   create src\main\webapp\app\entities\country\country-update.component.html
+   create src\main\webapp\app\entities\country\country-delete-dialog.component.html
+   create src\main\webapp\app\entities\region\region.module.ts
+   create src\main\webapp\app\entities\region\region.route.ts
+   create src\main\webapp\app\shared\model\region.model.ts
+   create src\main\webapp\app\entities\region\region.component.ts
+   create src\main\webapp\app\entities\region\region-detail.component.ts
+   create src\main\webapp\app\entities\region\region.service.ts
+   create src\main\webapp\app\entities\region\region-update.component.ts
+   create src\main\webapp\app\entities\region\region-delete-dialog.component.ts
+   create src\main\resources\config\liquibase\changelog\20200118151158_added_entity_Location.xml
+   create src\test\javascript\spec\app\entities\region\region-detail.component.spec.ts
+   create src\main\resources\config\liquibase\changelog\20200118151158_added_entity_constraints_Location.xml
+   create src\test\javascript\spec\app\entities\region\region.component.spec.ts
+   create src\main\resources\config\liquibase\fake-data\location.csv
+   create src\test\javascript\spec\app\entities\region\region.service.spec.ts
+   create src\main\java\com\mycompany\myapp\domain\Location.java
+   create src\test\javascript\spec\app\entities\region\region-update.component.spec.ts
+   create src\main\java\com\mycompany\myapp\repository\LocationRepository.java
+   create src\test\javascript\spec\app\entities\region\region-delete-dialog.component.spec.ts
+   create src\main\java\com\mycompany\myapp\web\rest\LocationResource.java
+   create src\test\javascript\e2e\entities\region\region.page-object.ts
+   create src\main\java\com\mycompany\myapp\service\LocationService.java
+   create src\test\javascript\e2e\entities\region\region.spec.ts
+   create src\main\java\com\mycompany\myapp\service\dto\LocationDTO.java
+ conflict src\main\webapp\app\entities\entity.module.ts
+? Overwrite src\main\webapp\app\entities\entity.module.ts? overwrite
+    force src\main\webapp\app\entities\entity.module.ts
+   create src\main\java\com\mycompany\myapp\service\mapper\LocationMapper.java
+   create src\main\webapp\i18n\en\region.json
+   create src\test\java\com\mycompany\myapp\web\rest\LocationResourceIT.java
+ conflict src\main\webapp\i18n\en\global.json
+? Overwrite src\main\webapp\i18n\en\global.json? overwrite
+    force src\main\webapp\i18n\en\global.json
+   create src\test\gatling\user-files\simulations\LocationGatlingTest.scala
+   create src\main\webapp\i18n\ro\region.json
+   create src\test\java\com\mycompany\myapp\domain\LocationTest.java
+ conflict src\main\webapp\i18n\ro\global.json
+? Overwrite src\main\webapp\i18n\ro\global.json? overwrite
+    force src\main\webapp\i18n\ro\global.json
+   create src\test\java\com\mycompany\myapp\service\dto\LocationDTOTest.java
+   create src\main\webapp\app\entities\country\country.module.ts
+   create src\test\java\com\mycompany\myapp\service\mapper\LocationMapperTest.java
+   create src\main\webapp\app\entities\country\country.route.ts
+   create src\main\webapp\app\entities\location\location.component.html
+   create src\main\webapp\app\shared\model\country.model.ts
+   create src\main\webapp\app\entities\location\location-detail.component.html
+   create src\main\webapp\app\entities\country\country.component.ts
+   create src\main\webapp\app\entities\location\location-update.component.html
+   create src\main\webapp\app\entities\country\country-detail.component.ts
+   create src\main\webapp\app\entities\location\location-delete-dialog.component.html
+   create src\main\webapp\app\entities\country\country.service.ts
+   create src\main\resources\config\liquibase\changelog\20200118151159_added_entity_Department.xml
+   create src\main\webapp\app\entities\country\country-update.component.ts
+   create src\main\resources\config\liquibase\changelog\20200118151159_added_entity_constraints_Department.xml
+   create src\main\webapp\app\entities\country\country-delete-dialog.component.ts
+   create src\main\resources\config\liquibase\fake-data\department.csv
+   create src\test\javascript\spec\app\entities\country\country-detail.component.spec.ts
+   create src\main\java\com\mycompany\myapp\domain\Department.java
+   create src\test\javascript\spec\app\entities\country\country.component.spec.ts
+   create src\main\java\com\mycompany\myapp\repository\DepartmentRepository.java
+   create src\test\javascript\spec\app\entities\country\country.service.spec.ts
+   create src\main\java\com\mycompany\myapp\web\rest\DepartmentResource.java
+   create src\test\javascript\spec\app\entities\country\country-update.component.spec.ts
+   create src\main\java\com\mycompany\myapp\service\DepartmentService.java
+   create src\test\javascript\spec\app\entities\country\country-delete-dialog.component.spec.ts
+   create src\main\java\com\mycompany\myapp\service\dto\DepartmentDTO.java
+   create src\test\javascript\e2e\entities\country\country.page-object.ts
+   create src\main\java\com\mycompany\myapp\service\mapper\DepartmentMapper.java
+   create src\test\javascript\e2e\entities\country\country.spec.ts
+   create src\test\java\com\mycompany\myapp\web\rest\DepartmentResourceIT.java
+   create src\main\webapp\i18n\en\country.json
+   create src\test\gatling\user-files\simulations\DepartmentGatlingTest.scala
+   create src\main\webapp\i18n\ro\country.json
+   create src\test\java\com\mycompany\myapp\domain\DepartmentTest.java
+   create src\main\webapp\app\entities\location\location.module.ts
+   create src\test\java\com\mycompany\myapp\service\dto\DepartmentDTOTest.java
+   create src\main\webapp\app\entities\location\location.route.ts
+   create src\test\java\com\mycompany\myapp\service\mapper\DepartmentMapperTest.java
+   create src\main\webapp\app\shared\model\location.model.ts
+   create src\main\webapp\app\entities\department\department.component.html
+   create src\main\webapp\app\entities\location\location.component.ts
+   create src\main\webapp\app\entities\department\department-detail.component.html
+   create src\main\webapp\app\entities\location\location-detail.component.ts
+   create src\main\webapp\app\entities\department\department-update.component.html
+   create src\main\webapp\app\entities\location\location.service.ts
+   create src\main\webapp\app\entities\department\department-delete-dialog.component.html
+   create src\main\webapp\app\entities\location\location-update.component.ts
+   create src\main\resources\config\liquibase\changelog\20200118151200_added_entity_Task.xml
+   create src\main\webapp\app\entities\location\location-delete-dialog.component.ts
+   create src\main\resources\config\liquibase\fake-data\task.csv
+   create src\test\javascript\spec\app\entities\location\location-detail.component.spec.ts
+   create src\main\java\com\mycompany\myapp\domain\Task.java
+   create src\test\javascript\spec\app\entities\location\location.component.spec.ts
+   create src\main\java\com\mycompany\myapp\repository\TaskRepository.java
+   create src\test\javascript\spec\app\entities\location\location.service.spec.ts
+   create src\main\java\com\mycompany\myapp\web\rest\TaskResource.java
+   create src\test\javascript\spec\app\entities\location\location-update.component.spec.ts
+   create src\main\java\com\mycompany\myapp\service\TaskService.java
+   create src\test\javascript\spec\app\entities\location\location-delete-dialog.component.spec.ts
+   create src\main\java\com\mycompany\myapp\service\dto\TaskDTO.java
+   create src\test\javascript\e2e\entities\location\location.page-object.ts
+   create src\main\java\com\mycompany\myapp\service\mapper\TaskMapper.java
+   create src\test\javascript\e2e\entities\location\location.spec.ts
+   create src\test\java\com\mycompany\myapp\web\rest\TaskResourceIT.java
+   create src\main\webapp\i18n\en\location.json
+   create src\test\gatling\user-files\simulations\TaskGatlingTest.scala
+   create src\main\webapp\i18n\ro\location.json
+   create src\test\java\com\mycompany\myapp\domain\TaskTest.java
+   create src\test\java\com\mycompany\myapp\service\dto\TaskDTOTest.java
+   create src\test\java\com\mycompany\myapp\service\mapper\TaskMapperTest.java
+   create src\main\webapp\app\entities\task\task.component.html
+   create src\main\webapp\app\entities\task\task-detail.component.html
+   create src\main\webapp\app\entities\task\task-update.component.html
+   create src\main\webapp\app\entities\task\task-delete-dialog.component.html
+   create src\main\webapp\app\entities\department\department.module.ts
+   create src\main\webapp\app\entities\department\department.route.ts
+   create src\main\webapp\app\shared\model\department.model.ts
+   create src\main\webapp\app\entities\department\department.component.ts
+   create src\main\webapp\app\entities\department\department-detail.component.ts
+   create src\main\webapp\app\entities\department\department.service.ts
+   create src\main\webapp\app\entities\department\department-update.component.ts
+   create src\main\webapp\app\entities\department\department-delete-dialog.component.ts
+   create src\test\javascript\spec\app\entities\department\department-detail.component.spec.ts
+   create src\test\javascript\spec\app\entities\department\department.component.spec.ts
+   create src\test\javascript\spec\app\entities\department\department.service.spec.ts
+   create src\test\javascript\spec\app\entities\department\department-update.component.spec.ts
+   create src\test\javascript\spec\app\entities\department\department-delete-dialog.component.spec.ts
+   create src\test\javascript\e2e\entities\department\department.page-object.ts
+   create src\test\javascript\e2e\entities\department\department.spec.ts
+   create src\main\webapp\i18n\en\department.json
+   create src\main\resources\config\liquibase\changelog\20200118151201_added_entity_Employee.xml
+   create src\main\resources\config\liquibase\changelog\20200118151201_added_entity_constraints_Employee.xml
+   create src\main\webapp\i18n\ro\department.json
+   create src\main\resources\config\liquibase\fake-data\employee.csv
+   create src\main\java\com\mycompany\myapp\domain\Employee.java
+   create src\main\java\com\mycompany\myapp\repository\EmployeeRepository.java
+   create src\main\java\com\mycompany\myapp\web\rest\EmployeeResource.java
+   create src\main\java\com\mycompany\myapp\service\EmployeeService.java
+   create src\main\java\com\mycompany\myapp\service\dto\EmployeeDTO.java
+   create src\main\java\com\mycompany\myapp\service\mapper\EmployeeMapper.java
+   create src\test\java\com\mycompany\myapp\web\rest\EmployeeResourceIT.java
+   create src\test\gatling\user-files\simulations\EmployeeGatlingTest.scala
+   create src\test\java\com\mycompany\myapp\domain\EmployeeTest.java
+   create src\test\java\com\mycompany\myapp\service\dto\EmployeeDTOTest.java
+   create src\test\java\com\mycompany\myapp\service\mapper\EmployeeMapperTest.java
+   create src\main\webapp\app\entities\employee\employee.component.html
+   create src\main\webapp\app\entities\employee\employee-detail.component.html
+   create src\main\webapp\app\entities\employee\employee-update.component.html
+   create src\main\webapp\app\entities\employee\employee-delete-dialog.component.html
+   create src\main\webapp\app\entities\task\task.module.ts
+   create src\main\webapp\app\entities\task\task.route.ts
+   create src\main\webapp\app\shared\model\task.model.ts
+   create src\main\webapp\app\entities\task\task.component.ts
+   create src\main\webapp\app\entities\task\task-detail.component.ts
+   create src\main\webapp\app\entities\task\task.service.ts
+   create src\main\webapp\app\entities\task\task-update.component.ts
+   create src\main\webapp\app\entities\task\task-delete-dialog.component.ts
+   create src\test\javascript\spec\app\entities\task\task-detail.component.spec.ts
+   create src\test\javascript\spec\app\entities\task\task.component.spec.ts
+   create src\test\javascript\spec\app\entities\task\task.service.spec.ts
+   create src\test\javascript\spec\app\entities\task\task-update.component.spec.ts
+   create src\test\javascript\spec\app\entities\task\task-delete-dialog.component.spec.ts
+   create src\test\javascript\e2e\entities\task\task.page-object.ts
+   create src\test\javascript\e2e\entities\task\task.spec.ts
+   create src\main\resources\config\liquibase\changelog\20200118151202_added_entity_Job.xml
+   create src\main\resources\config\liquibase\changelog\20200118151202_added_entity_constraints_Job.xml
+   create src\main\webapp\i18n\en\task.json
+   create src\main\resources\config\liquibase\fake-data\job.csv
+   create src\main\java\com\mycompany\myapp\domain\Job.java
+   create src\main\java\com\mycompany\myapp\repository\JobRepository.java
+   create src\main\java\com\mycompany\myapp\web\rest\JobResource.java
+   create src\main\java\com\mycompany\myapp\service\JobService.java
+   create src\main\java\com\mycompany\myapp\service\dto\JobDTO.java
+   create src\main\java\com\mycompany\myapp\service\mapper\JobMapper.java
+   create src\test\java\com\mycompany\myapp\web\rest\JobResourceIT.java
+   create src\test\gatling\user-files\simulations\JobGatlingTest.scala
+   create src\test\java\com\mycompany\myapp\domain\JobTest.java
+   create src\main\webapp\i18n\ro\task.json
+   create src\test\java\com\mycompany\myapp\service\dto\JobDTOTest.java
+   create src\test\java\com\mycompany\myapp\service\mapper\JobMapperTest.java
+   create src\main\webapp\app\entities\job\job.component.html
+   create src\main\webapp\app\entities\job\job-detail.component.html
+   create src\main\webapp\app\entities\job\job-update.component.html
+   create src\main\webapp\app\entities\job\job-delete-dialog.component.html
+   create src\main\webapp\app\entities\employee\employee.module.ts
+   create src\main\webapp\app\entities\employee\employee.route.ts
+   create src\main\webapp\app\shared\model\employee.model.ts
+   create src\main\webapp\app\entities\employee\employee.component.ts
+   create src\main\webapp\app\entities\employee\employee-detail.component.ts
+   create src\main\webapp\app\entities\employee\employee.service.ts
+   create src\main\webapp\app\entities\employee\employee-update.component.ts
+   create src\main\webapp\app\entities\employee\employee-delete-dialog.component.ts
+   create src\test\javascript\spec\app\entities\employee\employee-detail.component.spec.ts
+   create src\test\javascript\spec\app\entities\employee\employee.component.spec.ts
+   create src\test\javascript\spec\app\entities\employee\employee.service.spec.ts
+   create src\test\javascript\spec\app\entities\employee\employee-update.component.spec.ts
+   create src\test\javascript\spec\app\entities\employee\employee-delete-dialog.component.spec.ts
+   create src\test\javascript\e2e\entities\employee\employee.page-object.ts
+   create src\main\resources\config\liquibase\changelog\20200118151203_added_entity_JobHistory.xml
+   create src\main\resources\config\liquibase\changelog\20200118151203_added_entity_constraints_JobHistory.xml
+   create src\test\javascript\e2e\entities\employee\employee.spec.ts
+   create src\main\resources\config\liquibase\fake-data\job_history.csv
+   create src\main\java\com\mycompany\myapp\domain\JobHistory.java
+   create src\main\java\com\mycompany\myapp\repository\JobHistoryRepository.java
+   create src\main\java\com\mycompany\myapp\web\rest\JobHistoryResource.java
+   create src\main\java\com\mycompany\myapp\service\JobHistoryService.java
+   create src\main\java\com\mycompany\myapp\service\dto\JobHistoryDTO.java
+   create src\main\java\com\mycompany\myapp\service\mapper\JobHistoryMapper.java
+   create src\test\java\com\mycompany\myapp\web\rest\JobHistoryResourceIT.java
+   create src\test\gatling\user-files\simulations\JobHistoryGatlingTest.scala
+   create src\test\java\com\mycompany\myapp\domain\JobHistoryTest.java
+   create src\main\webapp\i18n\en\employee.json
+   create src\test\java\com\mycompany\myapp\service\dto\JobHistoryDTOTest.java
+   create src\test\java\com\mycompany\myapp\service\mapper\JobHistoryMapperTest.java
+   create src\main\java\com\mycompany\myapp\domain\enumeration\Language.java
+   create src\main\webapp\app\entities\job-history\job-history.component.html
+   create src\main\webapp\app\entities\job-history\job-history-detail.component.html
+   create src\main\webapp\app\entities\job-history\job-history-update.component.html
+   create src\main\webapp\app\entities\job-history\job-history-delete-dialog.component.html
+   create src\main\webapp\i18n\ro\employee.json
+   create src\main\webapp\app\entities\job\job.module.ts
+   create src\main\webapp\app\entities\job\job.route.ts
+   create src\main\webapp\app\shared\model\job.model.ts
+   create src\main\webapp\app\entities\job\job.component.ts
+   create src\main\webapp\app\entities\job\job-detail.component.ts
+   create src\main\webapp\app\entities\job\job.service.ts
+   create src\main\webapp\app\entities\job\job-update.component.ts
+   create src\main\webapp\app\entities\job\job-delete-dialog.component.ts
+   create src\test\javascript\spec\app\entities\job\job-detail.component.spec.ts
+   create src\test\javascript\spec\app\entities\job\job.component.spec.ts
+   create src\test\javascript\spec\app\entities\job\job.service.spec.ts
+   create src\test\javascript\spec\app\entities\job\job-update.component.spec.ts
+   create src\test\javascript\spec\app\entities\job\job-delete-dialog.component.spec.ts
+   create src\test\javascript\e2e\entities\job\job.page-object.ts
+   create src\test\javascript\e2e\entities\job\job.spec.ts
+   create src\main\webapp\i18n\en\job.json
+   create src\main\webapp\i18n\ro\job.json
+   create src\main\webapp\app\entities\job-history\job-history.module.ts
+   create src\main\webapp\app\entities\job-history\job-history.route.ts
+   create src\main\webapp\app\shared\model\job-history.model.ts
+   create src\main\webapp\app\entities\job-history\job-history.component.ts
+   create src\main\webapp\app\entities\job-history\job-history-detail.component.ts
+   create src\main\webapp\app\entities\job-history\job-history.service.ts
+   create src\main\webapp\app\entities\job-history\job-history-update.component.ts
+   create src\main\webapp\app\entities\job-history\job-history-delete-dialog.component.ts
+   create src\test\javascript\spec\app\entities\job-history\job-history-detail.component.spec.ts
+   create src\test\javascript\spec\app\entities\job-history\job-history.component.spec.ts
+   create src\test\javascript\spec\app\entities\job-history\job-history.service.spec.ts
+   create src\test\javascript\spec\app\entities\job-history\job-history-update.component.spec.ts
+   create src\test\javascript\spec\app\entities\job-history\job-history-delete-dialog.component.spec.ts
+   create src\test\javascript\e2e\entities\job-history\job-history.page-object.ts
+   create src\test\javascript\e2e\entities\job-history\job-history.spec.ts
+   create src\main\webapp\app\shared\model\enumerations\language.model.ts
+   create src\main\webapp\i18n\en\language.json
+   create src\main\webapp\i18n\ro\language.json
+   create src\main\webapp\i18n\en\jobHistory.json
+   create src\main\webapp\i18n\ro\jobHistory.json
+Entity Region generated successfully.
+Entity Country generated successfully.
+Entity Location generated successfully.
+Entity Department generated successfully.
+Entity Task generated successfully.
+Entity Employee generated successfully.
+Entity Job generated successfully.
+
+Running `webpack:build` to update client app
+
+Entity JobHistory generated successfully.
